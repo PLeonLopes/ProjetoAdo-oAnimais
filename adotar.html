@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"/>
+  <title>ADOTEUMPET</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <header>
+    <nav>
+      <a class="logo" href="index.html">ADOTEUMPET</a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="catalogo.html">QUERO ADOTAR</a></li>
+        <li><a href="adotar.html">FORMULÁRIO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTEÚDO -->
+
+  <main class="formulariocenter">
+    <script src="mobile-navbar.js"></script>
+
+    <div class="container-form">
+        <div class="header-form">
+            <h2>Formulário de Adoção</h2>
+        </div>
+
+        <form id="form" class="form" action="" method="post">
+            <div class="form-control">
+                <label for="username">Primeiro Nome</label>
+                <input type="text" id="username" placeholder="Digite seu primeiro nome"/>
+            </div>
+
+            <div class="form-control">
+                <label for="lastname">Sobrenome</label>
+                <input type="text" id="lastname" placeholder="Digite seu sobrenome"/>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Digite seu email"/>
+            </div>
+
+            <div class="form-control">
+                <label for="number">Celular</label>
+                <input type="tel" id="number" placeholder="(xx) xxxx-xxxx"/>
+            </div>
+           
+            <div class="form-control">
+                <label for="animals">Opções de animais</label>
+            <select name="select">
+                <option value="" selected disabled>Selecione uma opção</option>
+                <option value="valor1">Bruno</option>
+                <option value="valor2">Paçoca</option>
+                <option value="valor3">Pedrita</option>
+                <option value="valor4">Sushi</option>
+                <option value="valor5">Princesa</option>
+                <option value="Alarido">Alarido</option>
+            </select>
+            </div>
+              <button type="submit">Enviar</button>
+        </form>
+    </div>
+  </main>
+
+  <hr class="espaco2">
+
+  <!-- FOOTER -->
+
+  <footer>
+    <div class="footer-top">
+      <h3 style="font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;;">SOBRE:</h3>
+      <p>Atendimento ao cliente: adoteumpet.com.br | De Domingo a Domingo, das 8:00h às 00:00h</p>
+      <ul class="socials">
+        <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy;2023 - ADOTE UM PET - Todos os direitos reservados.</div>
+  </footer>
+
+</body>
+</html>

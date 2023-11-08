@@ -1,0 +1,710 @@
+@charset "utf-8";
+
+body {
+  color: #333;
+  max-width: 100%;
+  overflow: visible;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.espaco {
+  opacity: 0;
+  width: 50px;
+}
+
+.espacolado {
+  opacity: 0;
+  width: 100px;
+}
+
+.espaco2 {
+  height: 50px;
+  opacity: 0;
+}
+
+.linha3 {
+  border: 2px solid #424659;
+  border-radius: 3px;
+}
+
+/* NAV BAR */
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #363B51;
+  height: 8vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  z-index: 1;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 41vw;
+    height: 84vh;
+    background: #363B51;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+  z-index: 1;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/* BANNER */
+    
+/* Container do Slideshow */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* FOOTER */
+
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #151620;
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 10px;
+  color: #fff;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-top h3 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.footer-top p {
+  max-width: 600px;
+  margin: 10px auto;
+  line-height: 18px;
+  font-size: 14px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 1rem 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.socials a i {
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+
+.socials a:hover i {
+  color: aqua;
+}
+
+.footer-bottom {
+  padding-top: 10px;
+  background: #000;
+  width: 100vw;
+  padding: 18px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span {
+  opacity: .4;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+/* CARDS */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  border-radius: 30px 30px 30px 30px;
+  background-color: white;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #363B51;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 0 0 30px 30px;
+}
+
+.card button:hover {
+  background-color: #BFA36F;
+  opacity: 1;
+}
+
+.card h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.col1-1 {
+  float: left;
+  width: 33.3%;
+}
+
+@media screen and (max-width: 600px) {
+  .col1-1 {
+    width: 100%;
+  }
+}
+
+.col1-2 {
+  float: left;
+  width: 33.3%;
+}
+
+@media screen and (max-width: 600px) {
+  .col1-2 {
+    width: 100%;
+  }
+}
+
+.col1-3 {
+  float: right;
+  width: 33.3%;
+}
+
+@media screen and (max-width: 600px) {
+  .col1-3 {
+    width: 100%;
+  }
+}
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col2-1 {
+  float: left;
+  width: 33.3%;
+}
+
+@media screen and (max-width: 600px) {
+  .col2-1 {
+    width: 100%;
+  }
+}
+
+.col2-2 {
+  float: left;
+  width: 33.3%;
+}
+
+@media screen and (max-width: 600px) {
+  .col2-2 {
+    width: 100%;
+  }
+}
+
+.col2-3 {
+  float: right;
+  width: 33.3%;
+}
+
+@media screen and (max-width: 600px) {
+  .col2-3 {
+    width: 100%;
+  }
+}
+
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* CATÁLOGO */
+
+.containercat {
+  max-width: 75%;
+  margin: auto;
+  height: 90vh;
+  margin-top: 5%;
+  background: white;
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+.left,
+.right {
+  width: 50%;
+  padding: 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex1 {
+  display: flex;
+}
+
+.main_image {
+  width: auto;
+  height: auto;
+}
+
+.option img {
+  width: 75px;
+  height: 75px;
+  padding: 10px;
+}
+
+.right {
+  padding: 20px 100px 50px 50px;
+}
+
+#titulolivro {
+  color: #1C1E26;
+  margin: 0 0 10px 0;
+  margin-top: 0px;
+  font-size: 25px;
+}
+
+#preco {
+  color: #1C1E26;
+}
+
+#descricao {
+  margin: 15px 0 50px 0;
+  line-height: 20px;
+  font-size: 15px;
+}
+
+label,
+.add span,
+.color span {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 20px 10px 20px 0;
+}
+
+.add label,
+.add span {
+  background: none;
+  border: 1px solid orange;
+  color: orangered;
+  text-align: center;
+  line-height: 25px;
+}
+
+.add label {
+  padding: 10px 30px 0 20px;
+  border-radius: 50px;
+  line-height: 0;
+}
+
+#comprar {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #424659;
+  color: white;
+  margin-top: 10%;
+  border-radius: 30px;
+}
+
+@media only screen and (max-width:768px) {
+  .containercat {
+    max-width: 90%;
+    margin: auto;
+    height: auto;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .containercat {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width:511px) {
+  .containercat {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .left,
+  .right {
+    padding: 0;
+  }
+
+  .option {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+/* TEXTO PÁGINA INICIAL */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.mission {
+  margin: 20px 0;
+}
+
+.mission p {
+  font-family: Arial, sans-serif;
+}
+
+@media (max-width: 600px) {
+  
+  .container {
+      padding: 10px;
+  }
+}
+
+.bannerresponsivo {
+  width: 100%;
+  height: auto;
+}
+
+.containerbanner {
+  width: 100%;
+  max-width: 500px;
+  background-color: #363B51;
+  margin: auto;
+  border-radius: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.chamar {
+  text-align: center;
+  font-family: system-ui, Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+
+.containerbanner:hover {
+  background-color: #636985;
+}
+
+/* FORMULÁRIO DE ADOÇÃO */
+
+.formulariocenter {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-form {
+  background:#fafafa;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, .212);
+  width: 400px;
+  max-width: 100%;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.header-form {
+  background-color: #fff;
+  padding: 20px;
+  
+}
+
+.header-form h2::after{
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #6c63ff;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.form {
+  padding: 20px;
+
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+
+}
+
+.form-control select{
+  border: 2px solid;
+  display: block;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+
+}
+
+.form-control input {
+  border: 2px solid;
+  display: block;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+}
+
+.form-control input:hover{
+  background-color: #eeeeee75;
+
+}
+
+.form-control input:focus-visible {
+  outline: 1px solid #6c63ff;
+}
+
+form button {
+  background-color: #6c63ff;
+  border: 2px solid;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+
+}
+
+form button:hover{
+  background-color: #4c45ca;
+
+}
