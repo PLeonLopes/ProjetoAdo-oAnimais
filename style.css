@@ -708,3 +708,43 @@ form button:hover{
   background-color: #4c45ca;
 
 }
+
+.body-mensagem {
+  font-family: system-ui, Helvetica, Arial, sans-serif;
+  position: absolute;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.mensagem {
+  position: absolute;
+  font-family: system-ui, Helvetica, Arial, sans-serif;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 3);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.botao-voltar {
+  font-family: system-ui, Helvetica, Arial, sans-serif;
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #363B51;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.botao-voltar:hover {
+  background-color: #636985;
+}
