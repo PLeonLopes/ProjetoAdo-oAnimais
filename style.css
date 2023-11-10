@@ -55,12 +55,16 @@ a:hover {
   letter-spacing: 4px;
 }
 
+.logo:hover {
+  color: yellow;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background: #363B51;
+  background: purple;
   height: 8vh;
 }
 
@@ -73,6 +77,10 @@ nav {
 .nav-list li {
   letter-spacing: 3px;
   margin-left: 32px;
+}
+
+.nav-list a:hover {
+  color: yellow;
 }
 
 .mobile-menu {
@@ -169,7 +177,7 @@ nav {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: purple;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -241,7 +249,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #151620;
+  background: #393a49;
   height: auto;
   width: 100vw;
   font-family: "Open Sans";
@@ -268,32 +276,6 @@ footer {
   margin: 10px auto;
   line-height: 18px;
   font-size: 14px;
-}
-
-.socials {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem 0 1rem 0;
-}
-
-.socials li {
-  margin: 0 10px;
-}
-
-.socials a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.socials a i {
-  font-size: 1.1rem;
-  transition: color .4s ease;
-}
-
-.socials a:hover i {
-  color: aqua;
 }
 
 .footer-bottom {
@@ -333,7 +315,7 @@ footer {
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #363B51;
+  background-color: purple;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -342,7 +324,8 @@ footer {
 }
 
 .card button:hover {
-  background-color: #BFA36F;
+  background-color: rgb(117, 28, 117);
+  color: yellow;
   opacity: 1;
 }
 
@@ -589,7 +572,7 @@ label,
 .containerbanner {
   width: 100%;
   max-width: 500px;
-  background-color: #363B51;
+  background-color: purple;
   margin: auto;
   border-radius: 8px;
   padding-top: 2px;
@@ -605,7 +588,7 @@ label,
 }
 
 .containerbanner:hover {
-  background-color: #636985;
+  background-color: rgba(107, 16, 107, 0.753);
 }
 
 /* FORMULÁRIO DE ADOÇÃO */
@@ -642,7 +625,7 @@ label,
   display: block;
   width: 5rem;
   height: 0.3rem;
-  background-color: #6c63ff;
+  background-color: purple;
   margin: 0 auto;
   position: absolute;
   border-radius: 10px;
@@ -694,7 +677,7 @@ label,
 }
 
 form button {
-  background-color: #6c63ff;
+  background-color: purple;
   border: 2px solid;
   font-size: 14px;
   border-radius: 10px;
@@ -705,7 +688,7 @@ form button {
 }
 
 form button:hover{
-  background-color: #4c45ca;
+  background-color: rgb(107, 28, 107);
 
 }
 

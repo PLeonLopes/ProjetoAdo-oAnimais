@@ -112,18 +112,12 @@ if (isset($_POST['submit'])){
   <!-- FOOTER -->
 
   <footer>
-    <div class="footer-top">
-      <h3 style="font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;;">SOBRE:</h3>
-      <p>Atendimento ao cliente: adoteumpet.com.br | De Domingo a Domingo, das 8:00h às 00:00h</p>
-      <ul class="socials">
-        <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
-      </ul>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy;2023 - ADOTE UM PET - Todos os direitos reservados.</div>
-  </footer>
-
+      <div class="footer-top">
+        <h3 style="font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;;">SOBRE:</h3>
+        <p>Atendimento ao cliente: adoteumpet.com.br | De Domingo a Domingo, das 8:00h às 00:00h</p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy;2023 - ADOTE UM PET - Todos os direitos reservados. - Pedro Nícollas Lopes | Ricardo Silva Flores</div>
+    </footer>
 </body>
 </html>
