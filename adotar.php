@@ -117,7 +117,7 @@ if (isset($_POST['submit'])){
         <p>Atendimento ao cliente: adoteumpet.com.br | De Domingo a Domingo, das 8:00h às 00:00h</p>
       </div>
       <div class="footer-bottom">
-        <p>&copy;2023 - ADOTE UM PET - Todos os direitos reservados. - Pedro Nícollas Lopes | Ricardo Silva Flores</div>
+        <p>&copy;2023 - ADOTE UM PET - Todos os direitos Reservados / Pedro Lopes - Ricardo Silva Flores - <a href="admin.php">admin</a></div>
     </footer>
 </body>
 </html>
